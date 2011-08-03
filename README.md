@@ -7,3 +7,8 @@ Usage
 -------
 
     use Rack::NonWwwEnforcer
+
+
+You can use it in your Rails app, in the environment configuration file add it to Middleware stack:
+
+    config.middleware.insert_before ActionDispatch::Static, Rack::NonWwwEnforcer
