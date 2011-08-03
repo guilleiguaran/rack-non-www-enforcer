@@ -12,7 +12,7 @@ module Rack
       req = Rack::Request.new(env)
       url = URI(req.url)
       if url.host =~ /^www\./i
-        headers = {'Content-Type' => 'text/html', 'Location' => url.to_s.gsub('www.', '')}
+        headers = {'Content-Type' => 'text/html', 'Location' => url.to_s.sub(/www\./i, '')}
         [301, headers, []]
       else
         @app.call(env)
