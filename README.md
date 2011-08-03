@@ -1,7 +1,9 @@
 Rack::NonWwwEnforcer
 =================
 
-Rack Middleware for redirect requests to the main domain of the app. (Ex. http://www.mysite.com to https://mysite.com)
+Rack Middleware for redirect requests to the main domain of the app. (Ex. http://www.mysite.com to http://mysite.com)
+
+To know why you must avoid www in your app read about [no-www initiative](http://no-www.org/)
 
 Usage
 -------
