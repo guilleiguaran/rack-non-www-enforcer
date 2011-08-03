@@ -1,4 +1,4 @@
-Rack::WwwRedirect
+Rack::NonWwwEnforcer
 =================
 
 Rack Middleware for redirect requests to the main domain of the app. (Ex. http://www.mysite.com to https://mysite.com)
@@ -6,4 +6,4 @@ Rack Middleware for redirect requests to the main domain of the app. (Ex. http:/
 Usage
 -------
 
-    use Rack::NonWwwRedirect
+    use Rack::NonWwwEnforcer
